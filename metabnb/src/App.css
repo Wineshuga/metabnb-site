@@ -3,10 +3,16 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
+    font-family: 'Red Rose', cursive;
 }
 
-p, li {
-    font-family: 'Red Rose', cursive;
+:root {
+    --purple-text: #81115e;
+    --gray-text: #434343;
+}
+
+.purple {
+    color: var(--purple-text);
 }
 
 nav, nav > ul {
@@ -16,6 +22,9 @@ nav, nav > ul {
 }
 
 nav {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
     padding: 1.5rem 3rem;
 }
 
@@ -29,10 +38,45 @@ nav {
 }
 
 .button {
-    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    background-color: var(--purple-text);
     color: #ffffff;
     width: 8rem;
     border: 0;
     padding: 0.6rem;
     border-radius: 0.6rem;
+}
+
+.home--hero {
+    display: flex;
+    padding-top: 11rem;
+    padding: 11rem 3rem 0 3rem;
+}
+
+.home--hero_text {
+    padding-right: 5rem;
+    margin-top: 1rem;
+}
+
+.home--hero_text > h1 {
+    font-size: 56px;
+}
+
+.home--hero_text > p {
+    font-size: 24px;
+    color: var(--gray-text);
+    margin-top: 1.6rem;
+}
+
+.home--hero_searchbox {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    width: 22rem;
+    outline: none;
+}
+
+.searchbox {
+    width: 12rem;
+    border-radius: 0 0.6rem 0.6rem 0;
+    padding: 0.9rem;
 }
