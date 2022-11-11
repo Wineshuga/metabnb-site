@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+p, li {
+    font-family: 'Red Rose', cursive;
+}
+
+nav, nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 1.5rem 3rem;
+}
+
+.nav-links > li, .link {
+    list-style: none;
+    color: #434343;
+}
+
+.nav-links {
+    gap: 3rem;
+}
+
+.button {
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    color: #ffffff;
+    width: 8rem;
+    border: 0;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
