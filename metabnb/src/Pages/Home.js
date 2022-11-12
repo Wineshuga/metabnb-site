@@ -1,5 +1,8 @@
 import Navbar from "../Components/Navbar";
-import HeroImg from "../Assets/Homepage1.png"
+import HeroImg from "../Assets/Homepage1.png";
+import Token from "../Assets/Mbtoken.png"
+import Mask from "../Assets/Metamask.png"
+import Opensea from "../Assets/Opensea.png"
 
 export default function Home() {
     return (
@@ -14,8 +17,13 @@ export default function Home() {
                         <input className="home--hero_searchbox" type={'search'} placeholder="Search for location" />
                         <input type={'submit'} value="Search" className="button searchbox" />
                     </div>
-                    <img src={HeroImg} alt="" />
+                    <img className="home--hero_img" src={HeroImg} alt="" />
                 </section>
+                <div className="home--hero_footer">
+                    <img src={Token} alt="" />
+                    <img src={Mask} alt="" />
+                    <img src={Opensea} alt="" />
+                </div>
             </main>
         </div>
     )
