@@ -5,6 +5,7 @@ import Mask from "../Assets/Metamask.png"
 import Opensea from "../Assets/Opensea.png"
 import Card from "../Components/Card";
 import Footer from "../Components/Footer";
+import MetabnbNfts from "../Components/MetabnbNfts";
 
 export default function Home() {
     return (
@@ -27,6 +28,7 @@ export default function Home() {
                     <img src={Opensea} alt="" />
                 </div>
                 <Card />
+                <MetabnbNfts />
                 <Footer />
             </main>
         </div>

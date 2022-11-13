@@ -89,6 +89,33 @@ nav {
    margin-top: 2rem;
 }
 
+.meta-section {
+    background-color: var(--purple-text);
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    padding: 4rem 3rem;
+    color: #ffffff;
+}
+
+.button-nfts {
+    background-color: #ffffff;
+    color: var(--purple-text);
+}
+
+.meta-section--text {
+    width: 30rem;
+}
+
+.meta-section--text > h1 {
+    font-size: 48px;
+}
+
+.meta-section--text > p {
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
 footer {
     background-color: #1D1D1E;
     display: flex;
@@ -126,6 +153,10 @@ footer {
 
     .home--hero_text {
         padding-top: 1rem;
+    }
+
+    .meta-section--photo {
+        width: 500px;
     }
 }
 
