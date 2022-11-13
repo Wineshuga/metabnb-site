@@ -3,6 +3,7 @@ import HeroImg from "../Assets/Homepage1.png";
 import Token from "../Assets/Mbtoken.png"
 import Mask from "../Assets/Metamask.png"
 import Opensea from "../Assets/Opensea.png"
+import Card from "../Components/Card";
 
 export default function Home() {
     return (
@@ -24,6 +25,7 @@ export default function Home() {
                     <img src={Mask} alt="" />
                     <img src={Opensea} alt="" />
                 </div>
+                <Card />
             </main>
         </div>
     )
