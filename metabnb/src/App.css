@@ -89,6 +89,32 @@ nav {
    margin-top: 2rem;
 }
 
+footer {
+    background-color: #1D1D1E;
+    display: flex;
+    padding: 3rem 10rem 2rem 3rem;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.footer--socials {
+    margin: 4rem 0 3rem 0;
+}
+
+.footer--socials > img {
+    margin-right: 2.2rem;
+}
+
+.footer--title {
+    margin-bottom: 1rem;
+}
+
+.footer--community > a, .footer--places > a, .footer--about > a{
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 1024px) {
     .home--hero_searchbox {
         width: 15rem;

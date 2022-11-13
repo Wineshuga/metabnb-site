@@ -4,6 +4,7 @@ import Token from "../Assets/Mbtoken.png"
 import Mask from "../Assets/Metamask.png"
 import Opensea from "../Assets/Opensea.png"
 import Card from "../Components/Card";
+import Footer from "../Components/Footer";
 
 export default function Home() {
     return (
@@ -26,6 +27,7 @@ export default function Home() {
                     <img src={Opensea} alt="" />
                 </div>
                 <Card />
+                <Footer />
             </main>
         </div>
     )
