@@ -9,7 +9,7 @@ export default function Home() {
     const cardDetails = data.map(item =>
         <Card
             img={item.img}
-            title={item.title}
+            titles={item.title}
             bold={item.bold}
             dist={item.distance}
             avail={item.availability} 
