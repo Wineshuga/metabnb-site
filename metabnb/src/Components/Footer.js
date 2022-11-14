@@ -1,7 +1,7 @@
-import Logo from "../Assets/Logo-bw.png"
-import FB from "../Assets/fb-icon.png"
-import IG from "../Assets/instagram-icon.png"
-import twitter from "../Assets/twitter-icon.png"
+import Logo from "../images/Logo-bw.png"
+import FB from "../images/fb-icon.png"
+import IG from "../images/instagram-icon.png"
+import twitter from "../images/twitter-icon.png"
 
 export default function Footer() {
     return (

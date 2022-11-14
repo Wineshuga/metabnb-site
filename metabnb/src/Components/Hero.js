@@ -1,7 +1,7 @@
-import HeroImg from "../Assets/Homepage1.png";
-import Token from "../Assets/Mbtoken.png"
-import Mask from "../Assets/Metamask.png"
-import Opensea from "../Assets/Opensea.png"
+import HeroImg from "../images/Homepage1.png"
+import Token from "../images/Mbtoken.png"
+import Mask from "../images/Metamask.png"
+import Opensea from "../images/Opensea.png"
 
 export default function Hero() {
     return (

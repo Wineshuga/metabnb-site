@@ -1,4 +1,4 @@
-import Photo from "../Assets/Homepage2.png"
+import Photo from "../images/Homepage2.png"
 
 export default function MetabnbNfts() {
     return (
