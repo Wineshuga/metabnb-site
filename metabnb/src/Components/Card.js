@@ -1,18 +1,16 @@
 import Star from "./Star"
-import {images} from "../Assets/Home-images"
 
-export default function Card() {
-    const pics = images.map(item => item.img)
+export default function Card(props) {
     return(
         <div className="card">
-            <img src={pics} alt="" />
+            <img src={props.img} alt="" />
             <div className="card--text_title">
-            <p>Desert king</p>
-            <p><b>1MBT per night</b></p>
+            <p>{props.titles}</p>
+            <p>{props.bold}</p>
             </div>
             <div className="card--text_details">
-                <p>2345km away</p>
-                <p>available for 2weeks stay</p>
+                <p>{props.dist}</p>
+                <p>{props.avail}</p>
             </div>
             <Star /><Star /><Star /><Star /><Star />
         </div>

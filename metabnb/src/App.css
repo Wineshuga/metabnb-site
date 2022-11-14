@@ -89,6 +89,10 @@ nav {
    margin-top: 2rem;
 }
 
+.card {
+    width: 5rem;
+}
+
 .meta-section {
     background-color: var(--purple-text);
     display: flex;
