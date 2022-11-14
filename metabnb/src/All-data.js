@@ -33,7 +33,7 @@ export const data = [
     },
     {
         id: 1,
-        img: "../Assets/Frame2.png",
+        img: "../Assets/Frame1.png",
         title: "Desert king",
         bold: <b>1MBT per night</b>,
         distance: "2345km away",
@@ -114,6 +114,14 @@ export const data = [
     {
         id: 15,
         img: "../Assets/Frame15.png",
+        title: "Desert king",
+        bold: <b>1MBT per night</b>,
+        distance: "2345km away",
+        availability: "available for 2weeks stay"
+    },
+    {
+        id: 16,
+        img: "../Assets/Frame16.png",
         title: "Desert king",
         bold: <b>1MBT per night</b>,
         distance: "2345km away",

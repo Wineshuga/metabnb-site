@@ -92,7 +92,7 @@ nav {
 .card {
     width: 18rem;
     border: 1px solid #D7D7D7;
-    margin: 24px;
+    margin: 10px;
     text-align: center;
     padding: 1rem 0.5rem;
     border-radius: 15px;
@@ -112,6 +112,14 @@ nav {
     font-size: 12px;
     justify-content: space-between;
     margin: 0.5rem 0.5rem;
+}
+
+.card--grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    /* max-width: 60rem; */
+    margin: 2rem 0;
+    justify-content: center;
 }
 
 .meta-section {
@@ -186,10 +194,10 @@ footer {
     border: 1px solid #B4B4B4;
     border-radius: 8px;
     width: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0.5rem;
+    background-image: url('./images/setting-5.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1024px) {

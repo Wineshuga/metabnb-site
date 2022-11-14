@@ -21,8 +21,8 @@ export default function Home() {
             <Navbar />
             <main>
                 <Hero />
+                <h1>Inspiration for your next adventure</h1>
                 <div className="card--grid">
-                    <h1>Inspiration for your next adventure</h1>
                     {cardDetails}
                 </div>
                 <MetabnbNfts />
