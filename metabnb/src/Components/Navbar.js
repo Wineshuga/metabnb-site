@@ -1,7 +1,10 @@
 import Logo from "../images/Logo.png"
 import {Link} from "react-router-dom"
+import Modal from "./Modal"
+import { useState } from "react"
 
 export default function Navbar() {
+    const [show, setShow] = useState(false)
     return (
         <nav>
             <img className="logo" src={Logo} alt="logo" />
@@ -11,7 +14,8 @@ export default function Navbar() {
                 <li><Link className="link" to={'/'}>NFTs</Link></li>
                 <li><Link className="link" to={'/'}>Community</Link></li>
             </ul>
-            <input className="button" type={'button'} value={'Connect wallet'}/>
+            <input onClick={()=> setShow(true)} className="button" type={'button'} value={'Connect wallet'}/>
+            <Modal onClose={()=> setShow(false)} show={show} />
         </nav>
     )
 }

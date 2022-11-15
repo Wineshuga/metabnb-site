@@ -4,7 +4,6 @@ import Card from "../Components/Card";
 import Footer from "../Components/Footer";
 import MetabnbNfts from "../Components/MetabnbNfts";
 import {data} from "../Home-data"
-import Modal from "../Components/Modal";
 
 export default function Home() {
     const cardDetails = data.map(item =>
@@ -22,7 +21,6 @@ export default function Home() {
             <Navbar />
             <main>
                 <Hero />
-                <Modal />
                 <h1 className="card--header">Inspiration for your next adventure</h1>
                 <div className="card--grid">
                     {cardDetails}

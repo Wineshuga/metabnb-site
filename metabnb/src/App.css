@@ -208,12 +208,38 @@ footer {
     background-position: 95%;
 }
 
+.main--modal {
+    background-color: rgba(64, 64, 64, 0.3);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.main--modal.show {
+    opacity: 1;
+    pointer-events: visible;
+}
+
 .modal {
-    max-width: 500px;
+    width: 40%;
     border: 1px solid #B4B4B4;
-    margin: 1rem auto;
     position: relative;
     border-radius: 16px;
+    background-color: #ffffff;
+    transform: translateY(-200px);
+    transition: all 0.3s ease-in-out;
+}
+
+.main--modal.show .modal {
+    transform: translateX(0);
 }
 
 .modal--header, .modal--text, .modal--group_buttons {
@@ -248,6 +274,17 @@ footer {
 .modal--close_icon:hover {
     cursor: pointer;
 }
+
+/* .darkBG {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  } */
 
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
     .home--hero_searchbox {
