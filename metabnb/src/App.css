@@ -50,6 +50,10 @@ nav {
     border-radius: 0.6rem;
 }
 
+.hamburger--menu {
+    display: none;
+}
+
 .home--hero {
     display: flex;
     padding: 10rem 3rem 0 3rem;
@@ -369,6 +373,50 @@ footer {
 }
 
 @media screen and (max-width: 767px) and (min-width: 481px) {
+    .hamburger--menu {
+        display: flex;
+        align-items: center;
+        padding: 2rem 3rem;
+        justify-content: space-between;
+    }    
+
+    .hamburger {
+        background-color: var(--purple-text);
+        width: 30%;
+        position: fixed;
+        left: 70%;
+        top: 0;
+        height: 100vh;
+    }
+
+    .ham--content {
+        padding: 1rem;
+    }
+
+    .ham--links {
+        margin-top: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .link {
+        color: #ffffff;
+    }
+
+    .hamburger li {
+        list-style: none;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .menu-icon, .close-icon {
+        width: 3rem;
+    }
+
     .home--hero {
         flex-direction: column;
     }
@@ -388,7 +436,4 @@ footer {
     footer {
         flex-direction: column-reverse;
     }
-}
-
-@media screen and (max-width: 480px) and (min-width: 250px) {
 }
