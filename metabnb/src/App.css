@@ -116,10 +116,14 @@ nav {
 
 .card--grid {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    /* max-width: 60rem; */
+    grid-template-columns:  repeat(4, 19rem);
     margin: 2rem 0;
-    justify-content: center;
+    justify-content:center;
+}
+
+.card--header {
+    margin: 2rem;
+    text-align: center;
 }
 
 .meta-section {
@@ -200,7 +204,7 @@ footer {
     background-position: 95%;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1024px) {
+@media screen and (max-width: 1230px) and (min-width: 1024px) {
     .home--hero_searchbox {
         width: 15rem;
     }
@@ -220,9 +224,13 @@ footer {
     .place--second_nav > ul {
         gap: 2rem;
     }
+
+    .card--grid {
+        grid-template-columns:  repeat(3, 19rem);
+    }
 }
 
-@media screen and (max-width: 1130px) and (min-width: 1024px) {
+@media screen and (max-width: 1130px) and (min-width: 800px) {
     .home--hero_text > h1 {
         font-size: 45px;
     }

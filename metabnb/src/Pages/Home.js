@@ -21,7 +21,7 @@ export default function Home() {
             <Navbar />
             <main>
                 <Hero />
-                <h1>Inspiration for your next adventure</h1>
+                <h1 className="card--header">Inspiration for your next adventure</h1>
                 <div className="card--grid">
                     {cardDetails}
                 </div>
