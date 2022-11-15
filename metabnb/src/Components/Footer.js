@@ -15,6 +15,7 @@ export default function Footer() {
                 </div>
                 <p>©2022 Metabnb</p>
             </div>
+            <div className="footer--links">
             <div className="footer--community">
                 <h4 className="footer--title">Community</h4>
                 <a href="https://www.twitter.com/wineshuga">NFT</a> 
@@ -35,6 +36,7 @@ export default function Footer() {
                 <a href="https://www.linkedin.com/in/uziwinnie">Creators</a> 
                 <a href="https://www.linkedin.com/in/uziwinnie">Career</a> 
                 <a href="https://www.linkedin.com/in/uziwinnie">Contact us</a> 
+            </div>
             </div>
         </footer>
     )
