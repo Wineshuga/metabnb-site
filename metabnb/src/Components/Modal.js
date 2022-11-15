@@ -1,0 +1,18 @@
+import wolf from "../images/wolfhead.png"
+import wallet from "../images/wallet-connect.png"
+import close from "../images/close-icon.svg"
+
+export default function Modal() {
+    return (
+        <div className="modal">
+            <img className="modal--close_icon" src={close} alt="" />
+            <h3 className="modal--header">Connect Wallet</h3>
+            <hr />
+            <p className="modal--text">Choose your preferred wallet:</p>
+            <div className="modal--group_buttons">
+                <button className="modal--button"><img src={wolf} alt="" /><span className="bold">Metamask</span></button>
+                <button className="modal--button"><img src={wallet} alt="" /><span className="bold">WalletConnect</span></button>
+            </div>
+        </div>
+    )
+}

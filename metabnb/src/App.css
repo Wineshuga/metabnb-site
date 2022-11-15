@@ -11,6 +11,10 @@
     --gray-text: #434343;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 .purple {
     color: var(--purple-text);
 }
@@ -204,7 +208,48 @@ footer {
     background-position: 95%;
 }
 
-@media screen and (max-width: 1230px) and (min-width: 1024px) {
+.modal {
+    max-width: 500px;
+    border: 1px solid #B4B4B4;
+    margin: 1rem auto;
+    position: relative;
+    border-radius: 16px;
+}
+
+.modal--header, .modal--text, .modal--group_buttons {
+    margin: 1rem;
+}
+
+.modal--button {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #B4B4B4;
+    background-image: url('./images/Down\ Chevron.png');
+    background-repeat: no-repeat;
+    background-position: 97%;
+}
+
+.modal--button:hover {
+    cursor: pointer;
+    background-color: var(--purple-text);
+}
+
+.modal--close_icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.modal--close_icon:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
     .home--hero_searchbox {
         width: 15rem;
     }
@@ -226,11 +271,11 @@ footer {
     }
 
     .card--grid {
-        grid-template-columns:  repeat(3, 19rem);
+        grid-template-columns:  repeat(4, 15rem);
     }
 }
 
-@media screen and (max-width: 1130px) and (min-width: 800px) {
+@media screen and (max-width: 1130px) and (min-width: 769px) {
     .home--hero_text > h1 {
         font-size: 45px;
     }
@@ -243,4 +288,10 @@ footer {
         width: 400px;
     }
 
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+}
+
+@media screen and (max-width: 480px) and (min-width: 250px) {
 }
