@@ -14,7 +14,9 @@ export default function Hero() {
                     <input className="home--hero_searchbox" type={'search'} placeholder="Search for location" />
                     <input type={'submit'} value="Search" className="button searchbox" />
                 </div>
-                <img className="home--hero_img" src={HeroImg} alt="" />
+                <div className="home--hero_img_div">               
+                    <img className="home--hero_img" src={HeroImg} alt="" />
+                </div>
             </div>
             <div className="home--hero_footer">
                 <img src={Token} alt="" />
