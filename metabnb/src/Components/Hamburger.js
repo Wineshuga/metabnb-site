@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom"
 import close from "../images/close.png"
+import Modal from "./Modal"
+import { useState } from "react"
 
 const Hamburger = props => {
+    const [show, setShow] = useState(false)
+
     if (!props.show) {
         return null
      }
@@ -15,6 +19,8 @@ const Hamburger = props => {
                     <li><Link className="link" to={'/'}>NFTs</Link></li>
                     <li><Link className="link" to={'/'}>Community</Link></li>
                 </ul>
+                <input onClick={() => setShow(true)} className="button" type={'button'} value={'Connect wallet'} />
+                <Modal onClose={() => setShow(false)} show={show} />
             </div>
         </div>
     )

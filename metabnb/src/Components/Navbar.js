@@ -23,8 +23,6 @@ export default function Navbar() {
             </nav>
             <div className="hamburger--menu">
                 <img className="logo" src={Logo} alt="logo" />
-                <input onClick={() => setShow(true)} className="button" type={'button'} value={'Connect wallet'} />
-                <Modal onClose={() => setShow(false)} show={show} />
                 <img onClick={() => setHam(true)} className="menu-icon" src={menu} alt="" />
             </div>
             <Ham onClose={() => setHam(false)} show={ham} />
