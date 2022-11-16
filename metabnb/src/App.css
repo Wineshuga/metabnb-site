@@ -193,11 +193,11 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-.place--second_nav {
+.place--hide_nav {
     display: flex;
-    padding: 10rem  3rem 4rem 3rem;
     align-items: center;
     justify-content: space-evenly;
+    padding: 10rem 0 4rem 0;
 }
 
 .place--second_nav > ul {
@@ -285,6 +285,10 @@ footer {
     cursor: pointer;
 }
 
+.place--option_bar {
+    display: none;
+}
+
 @media screen and (max-width: 1230px) and (min-width: 1024px) {
     .home--hero_searchbox {
         width: 13rem;
@@ -316,6 +320,10 @@ footer {
 
     footer, .footer--links {
         gap: 6rem;
+    }
+
+    .place--option_bar {
+        display: none;
     }
 }
 
@@ -369,6 +377,15 @@ footer {
 
     .footer--links {
         gap: 2rem;
+    }
+
+    .place--second_nav > ul {
+        gap: 1.5rem;
+        font-size: 13px;
+    }
+
+    .place--option_bar {
+        display: none;
     }
 }
 
@@ -477,6 +494,23 @@ footer {
 
     .footer--socials {
         margin: 2rem 0;
+    }
+
+    .place--second_nav {
+        display: none;
+    }
+
+    .place--hide_nav {
+        padding: 0;
+        gap: 0;
+    }
+
+
+    .place--option_bar {
+        display: block;
+        width: 12rem;
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
     }
 }
 
@@ -611,4 +645,22 @@ footer {
     .footer--socials {
         margin: 2rem 0;
     } 
+
+    .place--second_nav {
+        display: none;
+    }
+
+    .place--hide_nav {
+        padding: 5px;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .place--option_bar {
+        display: block;
+        width: 10rem;
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+    }
+
 }
