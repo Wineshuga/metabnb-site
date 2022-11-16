@@ -50,6 +50,10 @@ nav {
     border-radius: 0.6rem;
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 .hamburger--menu {
     display: none;
 }
